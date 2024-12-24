@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Navidad, Rachel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #8b0000, #ff4500);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #ffcccb;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        main h2 {
+            font-size: 2rem;
+            color: #ffd700;
+        }
+
+        .heart {
+            font-size: 4rem;
+            color: #ffcccb;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .message {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #ffe4e1;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .christmas-tree {
+            margin: 30px auto;
+            width: 100px;
+            height: 150px;
+            background: linear-gradient(to bottom, green, darkgreen);
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+            position: relative;
+        }
+
+        .star {
+            position: relative;
+            margin: 0 auto;
+            width: 40px;
+            height: 40px;
+            background: gold;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            top: -20px;
+        }
+
+        .decorations {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .decoration {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+            color: white;
+            opacity: 0.8;
+            animation: fall 4s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateX(-50%) translateY(-100px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-50%) translateY(800px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feliz Navidad, Rachel ❤️</h1>
+    </header>
+    <main>
+        <div class="star"></div>
+        <div class="christmas-tree">
+            <div class="snowflake">❄️</div>
+        </div>
+        <div class="decorations">
+            <div class="decoration"></div>
+            <div class="decoration"></div>
+            <div class="decoration"></div>
+        </div>
+        <h2 class="heart">💖</h2>
+        <p class="message">
+            Rachel, quiero aprovechar esta Navidad para agradecerte por todos los momentos especiales que hemos compartido este año. 
+            Eres mi mayor regalo y mi mayor alegría. Tu cariño y compañía hacen mi vida más feliz, y cada día contigo es un nuevo motivo para sonreír.
+        </p>
+        <p class="message">
+            Que esta Navidad esté llena de felicidad y cariño, como el que tú me das cada día. Te amo con todo mi corazón, y estoy agradecido por cada instante a tu lado.
+        </p>
+    </main>
+    <footer>
+        Con todo mi amor, Eduardo 💕
+    </footer>
+</body>
+</html>
